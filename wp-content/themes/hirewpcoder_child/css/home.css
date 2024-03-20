@@ -1,0 +1,483 @@
+
+/* Section Hero area Css Start */
+section.hero-area {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+section.hero-area .bg__span_content {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+}
+section.hero-area:before {
+    content: '';
+    width: 70%;
+    background: var(--b2-color);
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transform: skewX(-10deg);
+    left: -10%;
+    top: 0;
+}
+section.hero-area .container {
+    z-index: 10;
+}
+section.hero-area .container .txtContent h1 {
+    background: yellow;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 24px;
+}
+section.hero-area:after {
+    content: '';
+    background: url(https://jusarculpable12.github.io/hirewpcoder/wp-content/uploads/2024/03/WordPress-logotype-wmark-white.png);
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    z-index: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -10%;
+    background-position: left;
+    bottom: -20%;
+    opacity: 0.1;
+}
+section.hero-area .container .btnContent a {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    background: white;
+}
+section.hero-area .container .btnContent {
+    margin-top: 20px;
+}
+section.hero-area .container .txtContent h2 {
+    color: white;
+    text-shadow: -5px 3px BLACK;
+    font-weight: 800;
+}
+section.hero-area .bg__span_content:before {
+    content: '';
+    background: #0000004d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+/* Section Hero Area Css End */
+
+/* Section subHero Area Css Start */
+
+.scroll-snapContainer::-webkit-scrollbar {
+    display: none;
+}
+section.subhero-area {
+    background: #fff24b;
+    height: 100vh;
+    position: relative;
+}
+section.subhero-area:before {
+    content: '';
+    background: url(https://jusarculpable12.github.io/hirewpcoder/wp-content/uploads/2024/03/WordPress-logotype-wmark-white.png);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    background-size: contain;
+}
+section.subhero-area .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+section.subhero-area .content .txtContent h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 400;
+}
+section.subhero-area .content .txtContent h2 span {
+    background: #ffffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+}
+/* Section subHero Area Css End */
+
+/* Steps Css Start */
+.display-flex.content > div h2 {
+    font-size: 54px;
+}
+.display-flex.content > div p {
+    font-size: 18px;
+}
+.contentContainer .container {
+    display: flex;
+    align-items: center;
+}
+.contentContainer .txtContent .titleContant h2 {
+    font-weight: 800;
+}
+.contentContainer:nth-child(odd) .display-flex.content {
+    flex-direction: row-reverse;
+}
+/* Our Services Css Start */
+section.servicesSection {
+    position: relative;
+    background: #e5e5e5;
+    padding: 100px 0;
+}
+section.servicesSection .titleContent h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+section.servicesSection .titleContent h2 span{
+    font-weight: 800;
+}
+section.servicesSection .boxContent > div {
+    flex: 1;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+section.servicesSection .boxContent {
+    display: flex;
+    gap: 30px;
+    margin: 70px 0;
+}
+section.servicesSection .boxContent .boxContainer i {
+    color: var(--y4-color);
+    background: var(--b1-color);
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 35px;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px dashed var(--y4-color);
+    border-bottom: 3px dashed var(--y4-color);
+    border-top: 3px dashed transparent;
+    border-left: 3px dashed transparent;
+}
+section.servicesSection .boxContent .boxContainer h2 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: white;
+    background: var(--b1-color);
+    border-radius: 25px 0 25px 0;
+    width: 100%;
+}
+/* About us Section Css Start */
+section.about-usSection .img__bg__span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+section.about-usSection .content .txtContent {
+    background: var(--b2-color);
+    padding: 40px;
+    color: var(--w-color);
+    box-shadow: 0px 0px 1px 7px var(--b1-color);
+}
+section.about-usSection {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+section.about-usSection .img__bg__span:before {
+    content: '';
+    background: #0000004d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+section.about-usSection .content .txtContent h2 {
+    font-weight: 400;
+    text-shadow: -5px 3px BLACK;
+}
+section.about-usSection .content .txtContent h2 span{
+    font-weight: 800;
+    color: var(--y4-color);
+}
+section.about-usSection .content .txtContent .paragraphContent {
+    border: 3px solid var(--w-color);
+    padding: 15px;
+    box-shadow: 5px 5px 0px 0px var(--w-color);
+}
+section.about-usSection .content .txtContent .paragraphContent span {
+    background: var(--y4-color);
+    color: var(--b1-color);
+}
+section.about-usSection .display-flex.content > div p {
+    margin: 0;
+}
+/* About us Section Css End */
+
+/* Testimonial Section Css Start */
+section.testimonial-section {
+    position: relative;
+    background-color: var(--y4-color);
+}
+section.testimonial-section:before {
+    content: '';
+    width: 100%;
+    left: -50%;
+    height: 100%;
+    position: absolute;
+    background: var(--b3-color);
+    transform: skewX(-65deg);
+}
+section.testimonial-section .container {
+    padding: 100px 30px;
+}
+section.testimonial-section .testimonial-Container {
+    box-shadow: 0 0 10px;
+    padding: 40px;
+    background: var(--w-color);
+    border-radius: 4px;
+    position: relative;
+}
+section.testimonial-section .testimonial-Container .testimonialContent img {
+    max-width: 80px;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--b3-color);
+    margin-top: -75px;
+    background: var(--y4-color);
+}
+section.testimonial-section .testimonial-Container .testimonialContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #e5e5e5;
+    padding: 20px;
+    border-radius: 8px;
+    border-bottom: 2px solid var(--b1-color);
+    border-right: 3px solid var(--b1-color);
+}
+section.testimonial-section .testimonial-Container .heading-descContent {
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+section.testimonial-section .testimonial-Container .heading-descContent h2 {
+    font-size: 45px;
+    font-weight: 400;
+    background: var(--b1-color);
+    border-radius: 25px 0 25px 0;
+    display: inline;
+    padding: 0 20px;
+    color: var(--w-color);
+}
+section.testimonial-section .testimonial-Container .heading-descContent h2 span {
+    font-weight: 800;
+    color: var(--y4-color);
+}
+section.testimonial-section .testimonial-Container .heading-descContent p {
+    margin: 20px 0;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.testimonial-section .testimonial-Container .content {
+    padding: 100px 0 20px 0;
+    position: relative;
+    z-index: 5;
+}
+section.testimonial-section .testimonial-Container .testimonialContent cite {
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section.testimonial-section .testimonial-Container .heading-descContent p:before {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: var(--b1-color);
+    position: absolute;
+    bottom: -20px;
+    max-width: 50px;
+}
+
+/* Testimonial Section Css End */
+
+/* Why Us Section Css Start*/
+section.why-us-Section .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
+    transition-duration: 0ms;
+    transform: translate3d(0px, 0px, 0px);
+    transition-delay: 0ms;
+}
+section.why-us-Section .swiper-scrollbar {
+    display: block !important;
+    /* padding: 20px; */
+    width: 100%;
+    border: 3px solid var(--b3-color);
+    border-radius: 10px;
+    margin-top: 35px;
+    overflow: hidden;
+}
+section.why-us-Section .swiper-scrollbar-drag {
+    background: var(--y4-color);
+    padding: 6px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+section.why-us-Section .swiper-slide {
+    max-width: 350px;
+    margin-right: 90px !important;
+}
+section.why-us-Section .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: block;
+    cursor: pointer;
+}
+section.why-us-Section .txtcontent {
+    width: 100%;
+    background: var(--b2-color);
+    font-family: sans-serif;
+    color: var(--w-color);
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 0px 1px 7px var(--b1-color);
+    border-radius: 20px;
+    min-height: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.why-us-Section .headingContent h2 {
+    font-size: 42px;
+    font-weight: 400;
+}
+section.why-us-Section .headingContent h2 span{
+    font-weight: 800;
+}
+section.why-us-Section .txtcontent i {
+    color: var(--w-color);
+    background: var(--b3-color);
+    /* padding: 15px; */
+    border-radius: 50%;
+    font-size: 35px;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px dashed var(--w-color);
+    border-bottom: 3px dashed var(--w-color);
+    border-top: 3px dashed transparent;
+    border-left: 3px dashed transparent;
+}
+section.why-us-Section .txtcontent h3 {
+    font-weight: 800;
+    background: var(--w-color);
+    border-radius: 25px 0 25px 0;
+    display: inline;
+    padding: 0px 20px;
+    color: var(--b1-color);
+    margin: 20px 0 10px;
+    font-size: 19px;
+    line-height: unset !important;
+}
+section.why-us-Section .txtcontent p {
+    margin: 0;
+}
+section.why-us-Section {
+    position: relative;
+    padding: 100px 0;
+}
+section.why-us-Section .swiper-container {
+    margin: 30px 0;
+}
+/* Why Us Section Css End */
+/* CTA Section Css Start */
+section.cta-section {
+    position: relative;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    padding: 250px 0;
+}
+section.cta-section .content {
+    text-align: center;
+}
+section.cta-section .content h2 {
+    color: var(--w-color);
+    font-size: 42px;
+    font-weight: 400;
+    background: var(--b1-color);
+    border-radius: 25px 0 25px 0;
+    display: inline;
+    padding: 0 20px;
+}
+section.cta-section .content h2 span {
+    font-weight: 800;
+}
+section.cta-section:before {
+    content: '';
+    background: #0000004d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+section.cta-section .content p {
+    color: var(--w-color);
+    font-weight: 500;
+    margin: 10px 0 30px;
+}
+section.cta-section .content a {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+/* CTA Section Css End */

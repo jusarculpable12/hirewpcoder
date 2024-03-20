@@ -1,0 +1,57 @@
+
+/* Header Css Start */
+header {
+    background: var(--b1-color);
+    padding: 20px 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+header .headerContent .logo a{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+    font-family: 'Poppins';
+    font-size: 25px;
+    text-decoration: none;
+}
+header .headerContent .logo img {
+    max-width: 50px;
+    width: 100%;
+}
+header .headerContent .logo p {
+    margin-bottom: 0;
+}
+header .headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .headerContent .navContent nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+}
+header .headerContent .navContent nav ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+header .headerContent .navContent {
+    display: flex;
+    gap: 20px;
+}
+header .headerContent .navContent .contactBtn a {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/* Header Css End */

@@ -1,0 +1,135 @@
+/* Footer Css Start */
+footer .logo-contactContent .logoContent {
+    filter: invert(1);
+}
+footer .logo-contactContent .logoContent a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+    font-family: 'Poppins';
+    font-size: 25px;
+    text-decoration: none;
+}
+footer .logo-contactContent .logoContent a img {
+    max-width: 80px;
+    width: 100%;
+}
+footer .logo-contactContent .logoContent a p {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+footer .logo-contactContent .contactContent h3 {
+    font-size: 28px;
+}
+footer .logo-contactContent .contactContent p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid var(--b3-color);
+    background: var(--b1-color);
+    color: white;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.footer-bottom p{
+    margin: 0;
+}
+footer .logo-contactContent .socmedContent ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-left: 0;
+}
+footer .logo-contactContent .socmedContent ul a {
+    border-radius: 50%;
+    font-size: 21px;
+    height: 50px;
+    position: absolute;
+    max-width: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--y4-color);
+    background: var(--b1-color);
+}
+footer .logo-contactContent .socmedContent ul li {
+    position: relative;
+    max-width: 50px;
+    width: 100%;
+}
+footer .socmedContent {
+    padding: 15px 0 50px;
+}
+footer .content {
+    padding: 30px 0 50px;
+}
+footer .formContent .formcontentContainer {
+    width: 444px;
+    height: 58px;
+    background-color: white;
+    border: 4px solid white;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.11);
+    border-radius: 100px;
+    margin: auto;
+}
+footer .formContent .formcontentContainer input#email-signup {
+    height: 50px;
+    background-color: black;
+    padding: 0px 5px 0px 10px;
+    width: 300px;
+    caret-color: #fc4e03;
+    background-color: white;
+    font-size: 20px;
+    color: #383838;
+    outline-style: none;
+    border: none;
+    border-radius: 100px;
+}
+footer .formContent .formcontentContainer input#btn {
+    height: 50px;
+    width: 124px;
+    background-color: var(--b1-color);
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    float: right;
+    color: white;
+}
+footer .formContent h2 span {
+    font-weight: 800;
+}
+footer .formContent h2 {
+    font-size: 32px !important;
+    font-weight: 300;
+    color: var(--w-color);
+    margin-bottom: 20px;
+}
+footer .formContent > div {
+    background: var(--b3-color);
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+footer .content:before {
+    content: '';
+    background: url(https://jusarculpable12.github.io/hirewpcoder/wp-content/uploads/2024/03/WordPress-logotype-wmark-white.png);
+    height: 100%;
+    width: 100%;
+    filter: invert(1);
+    position: absolute;
+    z-index: -1;
+    background-position: top right;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    background-size: contain;
+}
+footer .display-flex.content {
+    position: relative;
+}
