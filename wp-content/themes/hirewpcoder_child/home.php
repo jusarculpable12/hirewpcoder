@@ -32,12 +32,13 @@ get_header(); ?>
                 </div>
             </div>
         </section>
-        <div id="scrollSnapper" class="scroll-snapContainer contentContainer-scroller">
+        <section id="what_wpdev_do" class="scroll-snapContainer contentContainer-scroller">
             <section class="subhero-area contentContainer-scroller">
                 <div class="container">
                     <div class="content">
                         <div class="txtContent">
                             <h2><?php the_field('what_wordpress_developer_do_section_heading'); ?></h2>
+                            <button>See Steps</button>
                         </div>
                     </div>
                 </div>
@@ -56,6 +57,7 @@ get_header(); ?>
                                         echo '<h2>'.get_sub_field('what_wordpress_developer_do_section_repeater_heading').'</h2>';
                                     echo '</div>';
                                     echo get_sub_field('what_wordpress_developer_do_section_repeater_paragraph');
+                                    echo ' <button>Close Steps</button>';
                                 echo '</div>';
                                 echo '<div class="titleContant">';
                                     echo '<img src="'.get_sub_field('what_wordpress_developer_do_section_repeater_image')['url'].'" alt="'.get_sub_field('what_wordpress_developer_do_section_repeater_image')['alt'].'">';
@@ -67,8 +69,8 @@ get_header(); ?>
                     }
                 }
                 ?>
-        </div>
-        <section class="servicesSection">
+        </section>
+        <section id="services" class="servicesSection">
             <div class="container">
                 <div class="content">
                     <div class="titleContent">
@@ -91,7 +93,7 @@ get_header(); ?>
                 </div>
             </div>
         </section>
-        <section class="about-usSection">
+        <section id="aboutUs" class="about-usSection">
             <div class="img__bg__span" style="background:url(<?php echo the_field('about_us_section_image'); ?>)"></div>
             <div class="container">
                 <div class="display-flex content">
@@ -105,7 +107,7 @@ get_header(); ?>
                 </div>
             </div>
         </section>
-        <section class="testimonial-section">
+        <section id="testimonial" class="testimonial-section">
             <div class="bg__span_content"></div>
             <div class="container">
                 <div class="testimonial-Container">
@@ -130,7 +132,7 @@ get_header(); ?>
                 </div>
             </div>
         </section>
-        <section class="why-us-Section">
+        <section id="why_us" class="why-us-Section">
             <div class="container">
                 <div class="headingContent">
                     <h2><?php the_field('why_choose_us_section_heading'); ?></h2>
@@ -156,7 +158,7 @@ get_header(); ?>
                 </div>
             </div>
         </section>
-        <section class="cta-section" style="background:url(<?php echo the_field('cta_section_bg'); ?>)">
+        <section id="contactUS" class="cta-section" style="background:url(<?php echo the_field('cta_section_bg'); ?>)">
             <div class="container">
                 <div class="content">
                     <h2><?php the_field('cta_section_heading'); ?></h2>
