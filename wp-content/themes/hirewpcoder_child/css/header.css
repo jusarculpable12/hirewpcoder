@@ -6,6 +6,7 @@ header {
     position: fixed;
     z-index: 999;
     width: 100%;
+    top: 0;
 }
 header .headerContent .logo a{
     display: flex;
@@ -39,6 +40,11 @@ header .headerContent .navContent nav ul a {
     text-decoration: none;
     color: white;
     font-weight: 500;
+    transition: 0.3s;
+}
+header .headerContent .navContent nav ul li a.link-active {
+    background: #404349;
+    border-radius: 25px 0 25px 0;
 }
 header .headerContent .navContent {
     display: flex;
@@ -53,5 +59,56 @@ header .headerContent .navContent .contactBtn a {
     font-weight: 500;
     font-size: 17px;
 }
-
+button.hamburger{
+    display: none;
+}
+header .headerContent .navContent nav ul li:last-of-type a {
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    background: #404349;
+}
 /* Header Css End */
+@media(max-width:1160px){
+    button.hamburger{
+        display: block;
+    }
+    header .navContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header nav {
+        display: none;
+    }
+    
+    header nav.open {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #2a2e34;
+        transition: all 0.3s ease-in-out;
+    
+    }
+    header .headerContent .navContent nav ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    }
+}
+@media(max-width: 767px){
+    header .container{
+        padding: 0 15px;
+    }
+    header .headerContent .navContent nav ul a{
+        font-size: 20px;
+    }
+}

@@ -33,6 +33,7 @@ section.hero-area .container .txtContent h1 {
     font-family: 'Poppins';
     font-weight: 800;
     font-size: 24px;
+    padding: 3px 15px;
 }
 section.hero-area:after {
     content: '';
@@ -92,11 +93,13 @@ section.subhero-area:before {
     content: '';
     background: url(https://jusarculpable12.github.io/hirewpcoder/wp-content/uploads/2024/03/WordPress-logotype-wmark-white.png);
     height: 100%;
-    width: 100%;
+    width: 50%;
     position: absolute;
     background-repeat: no-repeat;
     filter: invert(1);
     background-size: contain;
+    left: 0;
+    background-position: left center;
 }
 section.subhero-area .content {
     display: flex;
@@ -135,6 +138,27 @@ section.subhero-area .content .txtContent h2 span {
 }
 .contentContainer:nth-child(odd) .display-flex.content {
     flex-direction: row-reverse;
+}
+.scroll-snapContainer .contentContainer {
+    height: 0;
+    z-index: -8;
+    transition: 0.3s;
+}
+.scroll-snapContainer.active .contentContainer {
+    height: 100vh;
+    z-index: 5;
+}
+section.subhero-area .txtContent {
+    text-align: center;
+}
+.scroll-snapContainer button {
+    border-radius: 8px;
+    padding: 13px 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    background: #404349;
 }
 /* Our Services Css Start */
 section.servicesSection {
@@ -186,6 +210,7 @@ section.servicesSection .boxContent .boxContainer h2 {
     background: var(--b1-color);
     border-radius: 25px 0 25px 0;
     width: 100%;
+    padding: 7px 10px;
 }
 /* About us Section Css Start */
 section.about-usSection .img__bg__span {
@@ -295,7 +320,7 @@ section.testimonial-section .testimonial-Container .heading-descContent h2 {
     background: var(--b1-color);
     border-radius: 25px 0 25px 0;
     display: inline;
-    padding: 0 20px;
+    padding: 7px 20px;
     color: var(--w-color);
 }
 section.testimonial-section .testimonial-Container .heading-descContent h2 span {
@@ -416,7 +441,7 @@ section.why-us-Section .txtcontent h3 {
     background: var(--w-color);
     border-radius: 25px 0 25px 0;
     display: inline;
-    padding: 0px 20px;
+    padding: 7px 20px;
     color: var(--b1-color);
     margin: 20px 0 10px;
     font-size: 19px;
@@ -451,7 +476,7 @@ section.cta-section .content h2 {
     background: var(--b1-color);
     border-radius: 25px 0 25px 0;
     display: inline;
-    padding: 0 20px;
+    padding: 7px 20px;
 }
 section.cta-section .content h2 span {
     font-weight: 800;
@@ -481,3 +506,89 @@ section.cta-section .content a {
     font-size: 17px;
 }
 /* CTA Section Css End */
+@media(max-width: 1024px){
+    section.hero-area:before{
+        width: 90%;
+    }
+    #sectionHeroArea .display-flex.content .txtContent {
+        flex: 1.5;
+    }
+    #sectionHeroArea .display-flex.content .blankContent {
+        flex: 0.5;
+    }    
+    section.about-usSection .content .txtContent{
+        flex: 1.7;
+    }
+    section.about-usSection .content .blankContent {
+        flex: 0.3;
+    }
+    section.testimonial-section .testimonial-Container .content{
+        gap: 20px;
+    }
+    section.testimonial-section .testimonial-Container{
+        padding: 40px 20px;
+    }
+}
+@media(max-width: 767px){
+    section.testimonial-section .testimonial-Container .content {
+        flex-direction: column;
+        gap: 70px;
+    }
+    section.hero-area .container .txtContent h1{
+        font-size: 21px;
+    }
+    section.hero-area .container .txtContent h2{
+        font-size: 50px;
+    }
+    /* section.subhero-area:before{
+        width: 40%;
+    } */
+    section.subhero-area .content .txtContent h2{
+        font-size: 50px;
+    }
+    section.subhero-area:before{
+        width: 85%;
+        left: -200px;
+        top: -200px;
+        background-position: left top;
+    }
+    .contentContainer .display-flex.content .titleContant {
+        text-align: center;
+    }
+    .contentContainer .display-flex.content,.contentContainer:nth-child(odd) .display-flex.content {
+        flex-direction: column-reverse;
+    }
+    .contentContainer .display-flex.content > div {
+        flex: unset !important;
+    }    
+    .contentContainer .display-flex.content .titleContant img {
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contentContainer .txtContent .titleContant h2 {
+        font-size: 45px;
+        text-align: left;
+    }
+    .scroll-snapContainer .display-flex.content > div span {
+        height: 50px;
+        width: 50px;
+        font-size: 35px;
+    }
+    section.servicesSection .boxContent {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+@media(max-width: 630px){
+    section.subhero-area:before{
+        width: 98%;
+    }
+}
+@media(max-width: 533px){
+    section.subhero-area:before {
+        width: 100%;
+        left: -150px;
+        top: -150px;
+    }
+}
